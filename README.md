@@ -16,7 +16,8 @@ git clone https://github.com/JoaoAssalim/Directory_Hnalder.git
 ```sh
 python Directory_Handler.py
 ```
-
+# Observation
+> If you'll save the files into a existent folder, don't give the same name to new files, because it'll delet your old files
 
 ## Meta
 
@@ -26,7 +27,7 @@ Joao Assalim – assalim.py@gmail.com
 
 ## Contributing
 
-1. Fork it (<https://github.com/JoaoAssalim/Tic_Tac_Toe/blob/main/README.md>)
+1. Fork it (<https://github.com/JoaoAssalim/Directory_Handler/blob/main/README.md>)
 
 <!-- Markdown link & img dfn's -->
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
