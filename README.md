@@ -8,13 +8,13 @@
 To run the program, just install python on your machine and clone the repository on your computer.
 ```sh
 cd "directory of your choice"
-git clone https://github.com/JoaoAssalim/Directory_Hnalders.git
+git clone https://github.com/JoaoAssalim/Directory_Hnalder.git
 ```
 
-*with the file saved as "Directory_Handlers.py", run:*
+*with the file saved as "Directory_Handler.py", run:*
 
 ```sh
-python Tic_Tac_Toe.py
+python Directory_Handler.py
 ```
 
 
