@@ -16,8 +16,10 @@ git clone https://github.com/JoaoAssalim/Directory_Hnalder.git
 ```sh
 python Directory_Handler.py
 ```
-# Observation
-> Don't run the program with files with the same name as 'file.txt' and 'file.txt', because the program will delete files with the same name.
+## Observation
+
+> Files can't have the same name (new files, or already in the final folder)
+> Files with the same name will be deleted
 
 
 ## Meta
