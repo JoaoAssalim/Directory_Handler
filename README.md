@@ -17,7 +17,8 @@ git clone https://github.com/JoaoAssalim/Directory_Hnalder.git
 python Directory_Handler.py
 ```
 # Observation
-> If you'll save the files into a existent folder, don't give the same name to new files, because it'll delet your old files
+> Don't run the program with files with the same name as 'file.txt' and 'file.txt', because the program will delete files with the same name.
+
 
 ## Meta
 
