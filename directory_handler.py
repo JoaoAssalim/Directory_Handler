@@ -1,35 +1,22 @@
 import os
-import shutil
 
-directory = input('enter directory: ')
-extension = input('enter extension: ')
-name = input('enter name: ')
-counter = 0
+dire = input('enter the directory: ')
 
-extension = f'.{extension}' if not '.' in extension else extension
+extensios = {
+    'images': ['.jpg', '.jpeg',  '.png', '.gif'],
+    'audio': ['.mp3'],
+    'video': ['.avi', '.mp4', '.web'],
+    'files': ['.txt', '.zip', '.xmls', '.pdf', '.exe'],
+    'programming': ['.py', '.js']
+}
 
-print('[1] - Rename\n[2] - Rename and move')
-option = input('-> ')
-
-if option == '1':
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            old_dir = os.path.join(root, file)
-
-            if extension in file:
-                counter += 1
-                new_dir = os.path.join(root, f'{name}-{counter}{extension}')
-                shutil.move(old_dir, new_dir)
-
-elif option == '2':
-
-    new_folder = input('enter new folder directory: ')
-
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            old_dir = os.path.join(root, file)
-
-            if extension in file:
-                counter += 1
-                new_dir = os.path.join(new_folder, f'{name}-{counter}{extension}')
-                shutil.move(old_dir, new_dir)
+for types in extensios:
+    if not os.path.isdir(f'{dire}\\{types}'):
+        os.mkdir(f'{dire}\{types}')
+    for ext in extensios[types]:
+        for root, dirs, files in os.walk(dire):
+            for file in files:
+                old = os.path.join(root, file)
+                if ext in file:
+                    new = os.path.join(f'{dire}\{types}', file)
+                    os.rename(old, new)
